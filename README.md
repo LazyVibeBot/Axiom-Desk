@@ -1,6 +1,7 @@
 # Axiom Desk
 
-Axiom Desk is a single-file, offline productivity cockpit built with the Python standard library only. It runs on Windows and stores everything locally in SQLite.
+A single-file offline productivity cockpit built only with Python's standard library.
+It keeps tasks, notes, focus sessions, and favorite paths in a local SQLite database.
 
 ## License
 
