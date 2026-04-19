@@ -1,23 +1,27 @@
 # Axiom Desk
 
-A single-file offline productivity cockpit built only with Python's standard library.
-It keeps tasks, notes, focus sessions, and favorite paths in a local SQLite database.
+Axiom Desk is a single-file, offline productivity cockpit for Windows built entirely with Python's standard library. It stores tasks, notes, focus sessions, favorites, templates, and activity history in a local SQLite database.
+
+## Current Version
+
+**v1.6**
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE).
 
-## Features
+## Highlights
 
-- Task manager with filters, due dates, priorities, and recurrence
-- Dashboard with overdue and due-soon visibility
-- Notes editor with tags and clipboard helpers
+- Task manager with filters, due dates, priorities, recurrence, duplicate, and postpone actions
+- Dashboard with overdue, due-soon, and 7-day agenda visibility
+- Notes editor with tags, clipboard helpers, and quick search
 - Focus timer with session logging
-- File hash calculator
-- Global search across tasks, notes, and favorites
-- Local backup, export, and import
+- File hash calculator and text statistics tools
+- Global search and command palette for fast keyboard-driven navigation
 - Favorite files and folders for quick access
+- Persistent activity trail stored locally
 - Light/dark theme toggle
+- Backup, export, and import tools
 
 ## Requirements
 
@@ -27,7 +31,7 @@ This project is released under the [MIT License](LICENSE).
 
 ## Quick Start
 
-1. Download or clone the repository.
+1. Clone or download this repository.
 2. Make sure Python is installed.
 3. Run:
 
@@ -43,31 +47,45 @@ run_axiom_desk.bat
 
 ## Data Storage
 
-Axiom Desk stores its data locally in your user profile:
+Axiom Desk stores all data locally in your user profile:
 
-- Windows: `%APPDATA%\AxiomDesk`
-- SQLite database: `axiom_desk.sqlite3`
-- Backups: `backups/`
+- **Windows:** `%APPDATA%\AxiomDesk`
+- **SQLite database:** `axiom_desk.sqlite3`
+- **Backups:** `backups/`
+
+## Keyboard Shortcuts
+
+- **Ctrl+K** — Global search
+- **Ctrl+P** — Command palette
+- **Ctrl+N** — Quick task
+- **Ctrl+Shift+N** — Quick note
+- **Ctrl+S** — Save the active editor
+- **F5** — Refresh all
+- **F6** — Toggle light/dark theme
 
 ## Usage Notes
 
-- Use the top search bar to search tasks, notes, and favorites.
-- Create tasks and notes from the Dashboard or the dedicated tabs.
-- Mark recurring tasks as complete to automatically spawn the next instance.
-- Use **Backup** before major changes or imports.
-- Export/import is JSON-based for easy portability.
+- Use the top search bar for quick searching across tasks, notes, favorites, and templates.
+- Save a task as a template from the Task tab, then create new tasks from that template later.
+- Mark recurring tasks as complete to automatically generate the next instance.
+- Use the Command Palette for fast navigation and common actions.
+- Create a backup before large imports or major data changes.
+- Export and import are JSON-based for simple portability.
 
 ## Version History
 
-- **v1.3** — recurring tasks, repeat-aware task editor, recurrence counters, and dashboard refinements
+- **v1.6** — command palette improvements, persistent activity trail, and template-aware navigation
+- **v1.5** — command palette, persistent activity history, activity dashboard counter
+- **v1.4** — 7-day agenda, task templates, duplicate/postpone tools, broader search coverage
+- **v1.3** — recurring tasks, repeat-aware task editor, recurrence counters
 - **v1.2** — due-soon forecasting, duplicate/postpone task actions, folder favorites, richer search previews
 - **v1.1** — due watch dashboard, improved quick-note flow, favorite search jumps
 - **v1.0** — initial release
 
 ## Contributing
 
-Issues and pull requests are welcome. Please keep changes aligned with the project’s goals: offline-first, no third-party dependencies, and Windows-friendly behavior.
+Issues and pull requests are welcome. Please keep changes aligned with the project goals: offline-first, Windows-friendly behavior, and no third-party dependencies.
 
-## DISCLAIMER
+## Repository Notes
 
-This project and README is entirely generated and maintained by OpenAI's GPT-5.4-Thinking-Mini.
+The repository should include the main app script, the Windows launcher batch file, and the latest patch notes for the current release.
