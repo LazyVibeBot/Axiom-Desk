@@ -89,3 +89,6 @@ Issues and pull requests are welcome. Please keep changes aligned with the proje
 ## Repository Notes
 
 The repository should include the main app script, the Windows launcher batch file, and the latest patch notes for the current release.
+
+This project and README is entirely generated and maintained by OpenAI's GPT-5.4-Thinking-Mini.
+
